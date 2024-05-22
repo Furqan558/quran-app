@@ -59,7 +59,7 @@ const QuranPage = () => {
   return (
     <div className="quran-page-container">
       <div className="sidebar">
-        <input type="text" placeholder="Search" className="search-input" />
+        {/* <input type="text" placeholder="Search" className="search-input" /> */}
         <ul className="surah-list">
           {pages.map((pageNumber) => (
             <li
