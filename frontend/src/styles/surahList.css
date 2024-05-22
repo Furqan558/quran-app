@@ -1,0 +1,168 @@
+.surah-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: -150px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgba(97, 177, 152, 0.7);
+  min-height: 350px;
+  padding-top: 20px;
+}
+
+.search-sort {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-sort input {
+  width: 35%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.quick-links {
+  margin: 10px 0;
+}
+
+.quick-links span {
+  margin-right: 10px;
+}
+
+.quick-links button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.sort {
+  margin-top: 10px;
+}
+
+.sort span {
+  margin-right: 10px;
+}
+
+.surah-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  text-decoration: none;
+}
+
+.surah-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.surah-card a {
+  text-decoration: none;
+}
+
+.surah-card:hover {
+  transform: scale(1.05);
+}
+
+.surah-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.surah-number {
+  color: #333;
+  background-color: #ffc107;
+  padding: 5px 10px;
+  border-radius: 1%;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-decoration: "none";
+}
+
+.surah-name {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.surah-translation {
+  font-size: 2em;
+  color: #61b198;
+  margin-bottom: 10px;
+}
+
+.surah-info {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  color: #6c757d;
+}
+
+.surah-info svg {
+  vertical-align: sub;
+}
+
+.surah-origin {
+  margin: 0 10px 0 0;
+}
+
+.surah-info span {
+  /* display: block; */
+  margin-bottom: 5px;
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .header {
+    min-height: 200px; /* Smaller height for mobile */
+    padding-top: 10px; /* Less padding */
+  }
+  .header h2 {
+    font-size: 14px;
+  }
+
+  .search-sort input {
+    width: 60%;
+  }
+
+  .quick-links,
+  .sort {
+    flex-direction: column; /* Stack links vertically on small screens */
+  }
+
+  .quick-links span,
+  .sort span {
+    margin-right: 0; /* Remove margin for inline elements */
+    display: block; /* Block-level elements take full width */
+  }
+
+  .surah-list {
+    margin-top: 10px;
+  }
+  .surah-list ul li {
+    margin: 5px 20px;
+    border: 1px solid #61b198;
+  }
+
+  .surah-cards {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(100%, 1fr)
+    ); /* Single column layout */
+  }
+}

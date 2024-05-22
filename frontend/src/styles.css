@@ -1,0 +1,25 @@
+/* styles.css */
+/* .surah-list {
+  max-width: 600px;
+  margin: 0 auto;
+} */
+
+.surah-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.surah-list ul li {
+  margin-bottom: 10px;
+}
+
+/* .quran-page {
+  max-width: 800px;
+  margin: 0 auto;
+} */
+
+.quran-pages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}

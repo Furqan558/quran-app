@@ -1,0 +1,12 @@
+/* App.css or index.css */
+@font-face {
+  font-family: "KFGQPC Uthmanic Script";
+  src: url("../assets/Uthmanic.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.arabic-text {
+  font-family: "KFGQPC Uthmanic Script", sans-serif;
+  font-size: 24px; /* Adjust as needed */
+}

@@ -1,0 +1,100 @@
+.quran-page-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  overflow-y: auto; /* Added to handle scrolling */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.surah-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.surah-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.surah-item.active {
+  background-color: #e0f7fa;
+}
+
+.quran-content {
+  width: 80%;
+  padding: 20px;
+  overflow-y: auto; /* Added to handle scrolling */
+}
+
+.surah-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.verse-container {
+  margin-bottom: 20px;
+}
+
+.verse {
+  margin-bottom: 20px;
+}
+
+.translation {
+  font-size: 16px;
+  color: #666;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.page-button.active {
+  background-color: #e0f7fa;
+  cursor: default;
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .quran-page-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    overflow-y: unset;
+  }
+  .surah-list {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .search-input {
+    display: none;
+  }
+  .pagination {
+    padding: 0 10px 20px 10px;
+    overflow-y: auto;
+  }
+}
